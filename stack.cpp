@@ -28,4 +28,16 @@ public:
 
     //push operation: insert an element onto the top of the stack
     int push(int value)
+    {
+        Node *newNode = new Node();
+        newNode->data = value;
+        newNode->data = top;
+        top = newNode;
+        
+    }
+
+    void pop()
+    {
+        
+    }
 }
