@@ -37,8 +37,10 @@ public:
         return value;
     }
 
+    //pop operation: remove the topmost element from the stack
     void pop()
     {
         Node *temp = top;
+        if (isEmpty())
     }
 }
