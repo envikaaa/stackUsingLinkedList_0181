@@ -48,7 +48,12 @@ public:
         }
 
         cout << "Popped value: " << temp->data << endl;
-        top = temp->next;
+        top = temp->next; //update the top pointer to  the next node
         delete temp;
     }
-}
+
+    void peek()
+    {
+        if (isEmpty())
+    }
+};
