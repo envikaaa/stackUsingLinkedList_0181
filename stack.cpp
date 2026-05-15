@@ -31,7 +31,7 @@ public:
     {
         Node *newNode = new Node();
         newNode->data = value;
-        newNode->data = top;
+        newNode->next = top;
         top = newNode;
         cout << "Push value: " << value << endl;
         return value;
@@ -72,6 +72,8 @@ public:
 
     bool isEmpty()
     {
-        
+        return top == NULL; // return true if the top pinter is null, indicating an empty stack
     }
 };
+
+int main()
